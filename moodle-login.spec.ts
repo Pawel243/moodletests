@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('Zaloguj się na Moodle i otwórz kurs', async ({ page }) => {
+test('Zaloguj się na Moodle, otwórz kurs i włącz Edit mode', async ({ page }) => {
   await page.goto('https://school.moodledemo.net/login/index.php');
 
   await page.locator('#username').fill('teacher');
